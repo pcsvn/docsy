@@ -1,12 +1,12 @@
-baseURL: https://example.docsy.dev
-title: Goldydocs
+baseURL: https://jaxd001.netlify.app
+title: Docsy Blog
 
 # cSpell:ignore goldmark github hugo readingtime docsy subdir lastmod pygments linenos catmullrom norsk gu
 
 # Language settings
-contentDir: content/en
-defaultContentLanguage: en
-defaultContentLanguageInSubdir: false
+contentDir: content
+defaultContentLanguage: vi
+defaultContentLanguageInSubdir: true
 # Useful when translating.
 enableMissingTranslationPlaceholders: true
 
@@ -40,15 +40,24 @@ permalinks:
 imaging:
   resampleFilter: CatmullRom
   quality: 75
-  anchor: smart
+  anchor: Smart
 
 # Language configuration
 languages:
-  en:
-    languageName: English
-    title: Goldydocs
+  vi:
+    languageName: "Tiếng Việt"
+    title: "Docsy Blog"
+    weight: 1
     params:
-      description: A Docsy example site
+      description: "Blog tài liệu kỹ thuật bằng tiếng Việt."
+        # description: A Docsy example site (removed to ensure unique keys)
+  en:
+    languageName: "English"
+    title: "Docsy Blog"
+    weight: 2
+    params:
+      description: "Technical documentation blog in English."
+        # description: A Docsy example site (removed to ensure unique keys)
   # cSpell:disable
   'no':
     languageName: Norsk

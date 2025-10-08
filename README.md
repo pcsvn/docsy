@@ -15,9 +15,9 @@ $ hugo mod graph
 
 For Docsy documentation, see [Docsy user guide][].
 
-This Docsy Example Project is hosted on [Netlify][] at [example.docsy.dev][].
-You can view deploy logs from the [deploy section of the project's Netlify
 dashboard][deploys], or this [alternate dashboard][].
+This project is hosted on [Netlify][] tại [jaxd001.netlify.app][].
+Bạn có thể xem log deploy tại [dashboard Netlify của dự án](https://app.netlify.com/projects/jaxd001/deploys).
 
 This is not an officially supported Google product. This project is currently maintained.
 
@@ -31,10 +31,10 @@ A simple way to get started is to use this project as a template, which gives yo
 
 3. Select a name for your new project and click **Create repository from template**.
 
-4. Make your own local working copy of your new repo using git clone, replacing https://github.com/me/example.git with your repo’s web URL:
+4. Tạo bản sao cục bộ repo của bạn bằng lệnh git clone, thay thế bằng URL repo của bạn:
 
 ```bash
-git clone --depth 1 https://github.com/me/example.git
+git clone --depth 1 https://github.com/pcsvn/docsy.git
 ```
 
 Depending on your environment you may need to adjust the top-level `module` settings in your project's Hugo config file, for example, by adding a proxy to use when downloading remote modules.
@@ -49,6 +49,29 @@ npm install
 ```
 
 ## Running the website locally
+
+## Run with GitHub Codespace
+
+Bạn có thể chạy dự án này trực tiếp trên GitHub Codespace mà không cần cài đặt thêm trên máy cá nhân. Các bước thực hiện:
+
+1. Truy cập repo của bạn trên GitHub: https://github.com/pcsvn/docsy
+2. Nhấn nút <strong>Code</strong> và chọn <strong>Open with Codespaces</strong> (hoặc <strong>Create codespace on main</strong>).
+3. Đợi Codespace khởi tạo môi trường (cài đặt Docker, Hugo, NodeJS, v.v. đã được cấu hình sẵn nếu có file devcontainer).
+4. Mở terminal trong Codespace và chạy:
+
+```bash
+hugo server
+```
+
+Hoặc nếu muốn chạy bằng Docker:
+
+```bash
+docker-compose up --build
+```
+
+Sau đó, truy cập địa chỉ preview do Codespace cung cấp (thường là một link public hoặc port 1313) để xem website.
+
+Bạn có thể chỉnh sửa mã nguồn trực tiếp trên Codespace và xem kết quả ngay lập tức.
 
 Building and running the site locally requires a recent `extended` version of [Hugo](https://gohugo.io).
 You can find out more about how to install Hugo for your environment in our
@@ -178,10 +201,10 @@ See this [section](https://www.docsy.dev/docs/get-started/docsy-as-module/instal
 
 
 [alternate dashboard]: https://app.netlify.com/sites/goldydocs/deploys
-[deploys]: https://app.netlify.com/sites/docsy-example/deploys
+[deploys]: https://app.netlify.com/sites/jaxd001/deploys
 [Docsy user guide]: https://docsy.dev/docs
-[Docsy]: https://github.com/google/docsy
-[example.docsy.dev]: https://example.docsy.dev
+[Docsy]: https://github.com/pcsvn/docsy
+[b1.pcs.io.vn]: https://b1.pcs.io.vn
 [Hugo theme module]: https://gohugo.io/hugo-modules/use-modules/#use-a-module-for-a-theme
 [Netlify]: https://netlify.com
 [Docker Compose documentation]: https://docs.docker.com/compose/gettingstarted/
