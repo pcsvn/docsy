@@ -1,15 +1,23 @@
----
 title: Goldydocs
----
 
 {{< blocks/cover title="Welcome to Goldydocs: A Docsy Example Project!" image_anchor="top" height="full" >}}
 <a class="btn btn-lg btn-primary me-3 mb-4" href="/docs/">
   Learn More <i class="fas fa-arrow-alt-circle-right ms-2"></i>
----
 title: "Chào mừng đến với Docsy"
 linkTitle: "Trang chủ"
 weight: 1
----
+
+Dự án ví dụ Docsy
+=================
+
+Đây là trang chủ cho dự án ví dụ Docsy. Bạn có thể sử dụng dự án này làm mẫu để tạo website tài liệu kỹ thuật của riêng bạn với [Docsy theme](https://github.com/google/docsy).
+
+Bắt đầu bằng cách chỉnh sửa trang này hoặc thêm nội dung mới!
+
+been eating **your** porridge.
+
+(Sadly, Goldydocs isn't a real project, but you can use this site as an example
+to create your own real websites with [Docsy](https://docsy.dev))
 
 Dự án ví dụ Docsy
 =================
